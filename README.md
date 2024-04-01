@@ -2,9 +2,9 @@
 
 This repository contains a simple implementation of a swift macro that allows you to create singletons in a more concise way.
 
-Usage:
+## Usage:
 
-In order to apply a macro use @Singleton annotation before the class definition. Like this:
+In order to apply a macro use `@Singleton` annotation before the class definition. Like this:
 
 ```swift
 @Singleton
