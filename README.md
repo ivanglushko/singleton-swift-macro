@@ -4,18 +4,23 @@ This repository contains a simple implementation of a swift macro that allows yo
 
 ## Usage:
 
-In order to apply a macro use `@Singleton` annotation before the class definition. Like this:
+1. Add a package dependecy to your project
+2. In order to apply a macro use `@Singleton` annotation before the class definition. Like this:
 
 ```swift
+import Singleton
+
 @Singleton
 class MyClass {
     // class contents...
 }
 ```
 
-The macro will expand the class definition to a singleton implementation like this:
+3. The macro will expand the class definition to a singleton implementation like this:
 
 ```swift
+import Singleton
+
 
 class MyClass {
 
@@ -26,4 +31,4 @@ class MyClass {
 }
 ```
 
-Thus making a shared instance of the class available out of the box.
+4. Thus making a `MyClass.shared` instance of the class available out of the box.
